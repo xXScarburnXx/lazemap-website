@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionamiento del GPS en el Zapato</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        /* Estilo general de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estilo para el header */
+        header {
+            background-color: #E6007E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Estilo del footer */
+        footer {
+            background-color: #08c455;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Estilo de la sección de imágenes */
+        .image-section {
+            display: flex;
+            justify-content: center;  /* Centra las imágenes */
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            border: 5px solid;
+            border-color: #E6007E #08c455; /* Bordes rosa y verde */
+        }
+
+        /* Contenedor de contenido */
+        .content-container {
+            padding: 40px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .content-container h3 {
+            color: #E6007E;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .content-container p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Botón para regresar al inicio */
+        .btn-return-home {
+            background-color: #E6007E;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 30px;
+        }
+
+        .btn-return-home:hover {
+            background-color: #c1006a;
+        }
+
+        /* Estilo para la sección de contenido */
+        .info-section {
+            margin-top: 40px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: row; /* Mantiene las imágenes en línea horizontal en dispositivos más pequeños */
+                align-items: center;
+                justify-content: center;
+            }
+
+            .content-container h3 {
+                font-size: 28px;
+            }
+
+            .content-container p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Funcionamiento del GPS en Laze Map</h1>
+    </header>
+
+    <!-- Botón para regresar al inicio -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <a href="index.html" class="btn-return-home">Volver al inicio</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de información -->
+    <div class="content-container">
+        <h3>¿Cómo Funciona el GPS en el Zapato?</h3>
+        <p>Los zapatos Laze Map están equipados con un sistema de GPS avanzado que permite el rastreo en tiempo real. A través de nuestra app, los padres pueden ver la ubicación exacta del zapato en un mapa interactivo. Además, los zapatos están diseñados con una batería de larga duración que asegura que el sistema de localización esté activo durante todo el día.</p>
+        <p>El sistema GPS está integrado en la suela del zapato, garantizando que no interfiera con la comodidad del usuario. Una vez que el niño o la persona con Alzheimer se aleja de una zona segura preestablecida, se envía una notificación al dispositivo móvil conectado.</p>
+    </div>
+
+    <!-- Apartados de imágenes -->
+    <div class="container image-section">
+        <img src="images/g1.png" alt="Imagen GPS 1">
+        <img src="images/g2.png" alt="Imagen GPS 2">
+    </div>
+
+    <!-- Sección adicional de información -->
+    <div class="container info-section">
+        <h4>¿Por qué es importante el GPS en los zapatos?</h4>
+        <p>El GPS en los zapatos Laze Map no solo ofrece tranquilidad a los padres, sino que también ayuda a las personas con Alzheimer a mantener su independencia sin el miedo de perderse. La integración de la tecnología permite un rastreo efectivo y seguro, lo que ofrece un nivel de protección nunca antes visto.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Laze Map | <a href="privacy-policy.html">Política de Privacidad</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

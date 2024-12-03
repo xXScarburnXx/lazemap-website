@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comodidad y Estilo de Laze Map</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #E6007E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #08c455;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content-container {
+            padding: 40px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .content-container h3 {
+            color: #E6007E;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .content-container p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .btn-return-home {
+            background-color: #E6007E;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 30px;
+        }
+
+        .btn-return-home:hover {
+            background-color: #c1006a;
+        }
+
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .product-gallery .product-item {
+            width: 250px;
+            text-align: center;
+        }
+
+        .product-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 5px solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to bottom, #E6007E, #08c455);
+            margin-bottom: 10px;
+        }
+
+        .product-gallery .product-name {
+            font-size: 18px;
+            color: #E6007E;
+        }
+
+        .product-gallery .product-price {
+            font-size: 16px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .content-container h3 {
+                font-size: 28px;
+            }
+
+            .content-container p {
+                font-size: 16px;
+            }
+
+            .product-gallery .product-item {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Comodidad y Estilo de Laze Map</h1>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <a href="index.html" class="btn-return-home">Volver al inicio</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <h3>Comodidad y Estilo en Cada Paso</h3>
+        <p>Los zapatos Laze Map combinan tecnología avanzada con diseño ergonómico para ofrecer comodidad y estilo
+            únicos.</p>
+        <p>Los zapatos Laze Map no solo son un accesorio tecnológico, sino también una herramienta esencial para la
+            tranquilidad de los padres. Diseñados con una suela ergonómica y materiales ligeros, aseguran que los niños
+            puedan jugar, correr y explorar sin restricciones. Además, su estilo moderno y colores llamativos hacen que
+            sean los favoritos de los más pequeños.
+            Gracias a la integración del sistema GPS, cada paso es monitoreado en tiempo real, proporcionando seguridad
+            sin sacrificar la comodidad. Con Laze Map, los niños disfrutan de su libertad mientras los padres tienen la
+            tranquilidad que merecen.</p>
+    </div>
+
+    <div class="container product-gallery">
+        <div class="product-item">
+            <img src="images/gps4.png" alt="Zapato Modelo 1">
+            <p class="product-name">Estilo</p>
+            <p class="product-price">Detalle</p>
+        </div>
+        <div class="product-item">
+            <img src="images/gps8.png" alt="Zapato Modelo 2">
+            <p class="product-name">Durabilidad</p>
+            <p class="product-price">Detalle</p>
+        </div>
+        <div class="product-item">
+            <img src="images/gps9.png" alt="Zapato Modelo 3">
+            <p class="product-name">Moderno</p>
+            <p class="product-price">Detalle</p>
+        </div>
+        <div class="product-item">
+            <img src="images/gpsa.png" alt="Zapato Modelo 4">
+            <p class="product-name">Cómodo</p>
+            <p class="product-price">Detalle</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Laze Map | <a href="privacy-policy.html">Política de Privacidad</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

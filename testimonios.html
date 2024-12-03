@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        /* Establecer las dos imágenes de fondo con opacidad oscura */
+        body {
+            position: relative;
+            background-image: url('./images/gps6.png'), url('./images/otra-imagen.png'); /* Ruta de las dos imágenes */
+            background-size: cover, cover; /* Para cubrir toda la pantalla sin distorsionar las imágenes */
+            background-position: center, center; /* Centrar ambas imágenes */
+            background-repeat: repeat, no-repeat; /* La primera imagen se repite, la segunda no */
+            min-height: 100vh; /* Cambiar a min-height para permitir scroll */
+            overflow-x: hidden; /* Evitar el desbordamiento horizontal */
+        }
+
+        /* Filtro oscuro para todo el fondo */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+            z-index: -1; /* Asegura que esté detrás del contenido */
+        }
+
+        /* Cambiar el color primario a verde */
+        .primary-color {
+            color: #E6007E; /* Rosa */
+        }
+
+        .text-primary {
+            color: #E6007E; /* Rosa */
+        }
+
+        /* Cambiar el color del texto a blanco y negro según el fondo */
+        body, .accordion-button, .accordion-body, .btn, h5 {
+            color: #000000 !important; /* Texto negro por defecto */
+        }
+
+        .accordion-body {
+            color: #000000 !important; /* Texto negro en las respuestas */
+        }
+
+        /* Estilo para los botones colapsados y sin colapsar */
+        .accordion-button.collapsed {
+            background-color: #E6007E !important; /* Fondo rosa en estado colapsado */
+            color: #FFFFFF !important;
+        }
+
+        .accordion-button {
+            background-color: #FFFFFF !important; /* Fondo blanco por defecto */
+            color: #000000 !important; /* Texto negro por defecto */
+        }
+
+        /* Modificar el efecto de deslizamiento hacia arriba */
+        .accordion-collapse {
+            transition: max-height 0.3s ease-out;
+            overflow: hidden;
+        }
+
+        .accordion-collapse:not(.show) {
+            max-height: 0;
+        }
+
+        .accordion-collapse.show {
+            max-height: 500px; /* Ajuste del max-height para que las respuestas se deslicen hacia arriba */
+        }
+
+        .accordion-body {
+            background-color: #f8f9fa; /* Fondo claro para las respuestas */
+            border-top: 2px solid #E6007E; /* Borde rosa para respuestas */
+            padding: 15px !important; /* Asegurarse de que el padding sea el mismo para todas las respuestas */
+        }
+
+        /* Estilo de la tarjeta para el botón de regresar al inicio */
+        .card-return-home {
+            border: 1px solid #28a745;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .card-return-home a {
+            font-size: 24px;
+            color: #fff;
+            background-color: #28a745;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .card-return-home a:hover {
+            background-color: #218838;
+        }
+
+        .card-return-home i {
+            font-size: 30px;
+        }
+
+        /* Estilo para cada pregunta en forma de tarjeta */
+        .accordion-item {
+            border: 1px solid #E6007E; /* Borde rosa */
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-header {
+            margin-bottom: 0 !important; /* Eliminar márgenes innecesarios */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="header-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Laze map white-02.png " class="logo img-fluid height 10">
+                </a>
+                <ul class="info d-flex flex-wrap justify-content-end align-items-center list-unstyled m-0">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tarjeta con el botón de regresar al inicio -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card-return-home text-center">
+                    <a href="index.html">
+                        <i class="bi bi-house-door-fill"></i> Volver al inicio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="faq" class="padding-small">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center">
+                        <h6 class="text-white"><span class="primary-color text-white">|</span class="text-white">Preguntas frecuentes</h6>
+                        <h3 class="display-6 fw-semibold mb-5 primary-color">Te tenemos respuestas</h3>
+                    </div>
+                    <div class="accordion mb-5" id="accordionExample">
+                        <!-- Pregunta 1 -->
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h5 class="my-2 primary-color">¿Qué tanto duran?</h5>
+                                </button>
+                            </h5>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                <div class="accordion-body pt-0">
+                                    Los Laze Map tienen una duración de un año de vida útil.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 2 -->
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h5 class="my-2 primary-color">¿Se pueden personalizar?</h5>
+                                </button>
+                            </h5>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="accordion-body pt-0">
+                                    Así es, se pueden personalizar los cordones y las suelas.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 3 -->
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingThree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h5 class="my-2 primary-color">¿La aplicación tiene algún costo para adquirirla?</h5>
+                                </button>
+                            </h5>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                <div class="accordion-body pt-0">
+                                    Si bien se tienen servicios personalizados, la aplicación es completamente gratuita.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

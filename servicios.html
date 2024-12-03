@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios </title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: #e6007e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.button-header {
+    background-color: #08c455;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button-header:hover {
+    background-color: #06a23a;
+}
+
+
+/* Contenedor principal */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    flex: 1;
+}
+
+.service-card {
+    background-color: white;
+    border: 2px solid #08c455;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h2 {
+    color: #e6007e;
+}
+
+.service-card p {
+    color: #555;
+}
+
+/* Galería de imágenes del producto */
+.product-images {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.product-images h2 {
+    color: #e6007e;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #08c455;
+}
+
+/* Footer sticky */
+.footer {
+    background-color: #08c455;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 1024px) {
+    .service-card {
+        width: 30%;
+    }
+
+    .image-gallery img {
+        width: 250px;
+    }
+}
+
+/* Media Queries para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .service-card {
+        width: 45%;
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 767px) {
+    .service-card {
+        width: calc(100% - 40px);
+    }
+
+    .image-gallery img {
+        width: 150px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        
+        <h1>Nuestros Servicios</h1>
+        <a href="index.html" class="button-header">Volver al Inicio</a>
+    </header>
+
+    <section class="services">
+        <div class="service-card">
+            <h2>Rastreo en Tiempo Real</h2>
+            <p>Monitorea la ubicación de tus hijos en tiempo real mediante nuestra app intuitiva y fácil de usar.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Zonas Seguras</h2>
+            <p>Configura zonas seguras como la escuela o el hogar, y recibe alertas si el niño sale de estas áreas definidas.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Sostenibilidad</h2>
+            <p>Nuestras zapatillas están diseñadas con materiales eco-friendly, cuidando el planeta y protegiendo a tus seres queridos.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Duración de la Batería</h2>
+            <p>Disfruta de una batería de larga duración que asegura un monitoreo constante durante todo el día.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Alertas en Tiempo Real</h2>
+            <p>Recibe notificaciones instantáneas si tu hijo sale de las zonas seguras, garantizando una rápida acción.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Diseño Confortable</h2>
+            <p>Calzado diseñado para la comodidad diaria, combinando estilo moderno y tecnología avanzada.</p>
+        </div>
+    </section>
+
+    <section class="product-images">
+        <h2>Galería de Productos</h2>
+        <div class="image-gallery">
+            <img src="images/gps.png" alt="Zapatilla lazemap 1">
+            <img src="images/gps4.png" alt="Zapatilla lazemap 2">
+            <img src="images/gpsa.png" alt="Zapatilla lazemap 3">
+            <img src="images/gpsf.png" alt="Zapatilla lazemap 4">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 LazeMap. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
